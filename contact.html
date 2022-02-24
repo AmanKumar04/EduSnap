@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSnap : Learn in a Snap</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/contact.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+<a href="index.html" class ="logo"><img src="img/EduSnap.png" alt=""></a>
+    <a href="index.html" class="logo">EduSnap</a>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="review.html">Testimonials</a></li>
+            <li><a href="fees.html">fees</a></li>
+            <li><a href="teachers.html">Teachers</a></li>
+            <li><a href="contact.html">contact Us</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!--Contact-->
+
+<section class="contact">
+
+    <div class="image">
+        <img src="img/undraw_contact_us_re_4qqt.svg" alt="">
+    </div>
+    
+    <form method="post" autocomplete="OFF" name="google-sheet">
+    
+        <div class="inputBox">
+            <input type="text" placeholder="Name" name="Name" required>
+            <input type="email" placeholder="Email" name="Email" required>
+        </div>
+    
+        <input type="Mobile" placeholder="Phone Number" class="box" name="Phone Number" required>
+    
+        <textarea placeholder="Message" cols="30" rows="10" name="Message" required></textarea>
+    
+        <input type="submit" class="btn" value="send">
+    
+    </form>
+    
+    </section>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyfLfFhqV2L0vJAt9fCIa6cEE6jmhUIP1kXeuTX-BPR44XaWl2gpMYP1hICH5o_GXOS/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="credit"> Copyright &copy; 2022 EduSnap | created by <span>Aman Kumar</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script src="js/contact.js"></script>
+
+</body>
+</html>
