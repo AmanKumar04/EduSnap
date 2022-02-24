@@ -1,1 +1,1 @@
-# EduSnap-
+# EduSnap : Learn in a Snap
