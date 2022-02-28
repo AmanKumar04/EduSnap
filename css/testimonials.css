@@ -258,6 +258,7 @@ section{
 	background: #fcfcfd;
 	z-index: 1;
 	width: 100%;
+	background-color: #f1f8fc;
 }
 .section-title{
 	float: left;
