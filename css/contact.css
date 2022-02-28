@@ -241,6 +241,12 @@ img{
 
 /* contact */
 
+.spam{
+  text-align: center;
+  font-size:2.5rem;
+  font-family: Caveat;
+}
+
 .contact{
   display: flex;
   flex-wrap: wrap;
