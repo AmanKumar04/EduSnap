@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -18,11 +19,10 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
-body{
-  background: #f1f8fc;
-}
+
 section {
   padding: 3rem 9%;
+  background-color: #f1f8fc;
 }
 
 .btn {
@@ -34,6 +34,7 @@ section {
   cursor: pointer;
   border-radius: .5rem;
   font-size: 1.7rem;
+  
 }
 
 .btn:hover {
@@ -186,7 +187,19 @@ img{
   line-height: 2.5;
 }
 
+.review h2{
+  font-size: 7rem;
+  text-align:center;
+  font-family: Caveat;
+  color: darkcyan;
+}
 
+.contact h2{
+  font-size: 7rem;
+  text-align:center;
+  font-family: Caveat;
+  color:darkcyan;
+}
 
 
 
@@ -195,7 +208,7 @@ img{
 }
 .footer .credit {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1rem;
   padding-top: 2.5rem;
   font-size: 2rem;
@@ -254,9 +267,19 @@ img{
     font-size: 50%;
   }
 }
+/*# sourceMappingURL=style.css.map */
 
 
-/* features */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: #f1f8fc;
+}
 
 .wrapper{
   max-width: 1080px;
