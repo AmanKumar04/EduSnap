@@ -29,8 +29,8 @@ section {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 3rem;
-  background: #e9edfb;
-  color: #224bcf;
+  background: #dce3fc;
+  color: darkcyan;
   cursor: pointer;
   border-radius: .5rem;
   font-size: 1.7rem;
@@ -322,11 +322,6 @@ body{
   width: 20rem;
 }
 
-.img-last{
-width:20rem;
-float: left;
-}
-
 .features{
  text-align: center;
  font-family: Caveat;
@@ -386,8 +381,13 @@ float: left;
     width:8rem; 
     margin-left:20rem;
   }
-  .img-last{
-    margin-bottom:8rem;
-  }
+.img-left{
+  float: left;
+  width: 15rem;
+}
 
+.img-right{
+  float: right;
+  width: 15rem;
+}
 }
