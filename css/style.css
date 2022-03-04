@@ -532,8 +532,14 @@ form .btn button{
     transform: translate(12.5%, -7.5%);
   }
 .popup {
-  width:85%;
+  width:90%;
 }
+  .popup h2{
+    font-size: 4rem;;
+  }
+  .popup p{
+    font-size: 1.75rem;
+  }
 }
 @media(max-width: 440px){
 
@@ -568,6 +574,11 @@ form .btn button{
   .popup {
     width:90%;
   }
-  
+  .popup h2{
+    font-size: 4rem;;
+  }
+  .popup p{
+    font-size: 1.75rem;
+  }
 }
 
