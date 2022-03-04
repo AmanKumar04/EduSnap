@@ -16,22 +16,34 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/features.css">
 
 </head>
 <body>
     
+<!--Popup starts here-->
+<div class="popup">
+  <button id="close">&times;</button>
+  <h2>Welcome to EduSnap</h2>
+  <p>
+    EduSnap provides you traditional classroom platform with the mixture of modern technology at your fingertips. We use best technology in the market at the least cost. We believe in building future of young minds. Regular doubt solving sessions and assessments that help the student to test his/her understanding on a regular interval of time.
+  </p>
+  <a href="https://wa.me/message/AKVNZTZSZPB5H1">Contact Us</a>
+</div>
+<!--Popup ends here-->
+
+
 <!-- header section starts  -->
 
 <header class="header">
 <a href="index.html" class ="logo"><img src="img/EduSnap.png" alt=""></a>
     <a href="index.html" class="logo">EduSnap</a>
 
-    <div id="menu-btn" class="fas fa-bars"></div>
-
+    <div id="menu" class="fas fa-bars"></div>
     <nav class="navbar">
         <ul>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="review.html">Testimonials</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="fees.html">fees</a></li>
             <li><a href="teachers.html">Teachers</a></li>
             <li><a href="contact.html">contact Us</a></li>
@@ -54,15 +66,59 @@
         <h3>Future is Here,</h3>
         <h3>Learn in a Snap</h3>
         <p>Your future starts here with new educational era, <br> Where you not only memorise concepts but create and understood it effortlessly.</p>
-        <a href="https://wa.me/message/AKVNZTZSZPB5H1" class="btn">Book a Demo Class Now</a>
-    </div>
-
 </section>
-
 <!-- home section ends -->
 
-<!-- Features section starts here -->
-   <img src="img/three-dots.png" class="dots">
+<!--Demo class popup starts-->
+<div class="center">
+  <input type="checkbox" id="show">
+  <label for="show" class="show-btn">Book a demo class</label>
+  <div class="container">
+     <label for="show" class="close-btn fas fa-times" title="close"></label>
+     <div class="text">
+        Demo Class
+     </div>
+     <form method="post" autocomplete="off" name="google-sheet">
+        <div class="data">
+           <label>Name</label>
+           <input type="text" name="name" required>
+        </div>
+        <div class="data">
+          <label>Phone Number</label>
+          <input type="number" name="phoneNumber" required>
+       </div>
+       <div class="data">
+        <label>Class</label>
+        <input type="text" name="class" required>
+     </div>
+        <div class="data">
+           <label>Subject</label>
+           <input type="text" name="subject" required>
+        </div>
+        <div class="btn">
+           <div class="inner"></div>
+           <button type="submit">Submit</button>
+        </div>
+     </form>
+  </div>
+</div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwXy_Kj-lVZHUI3Dq_VwPxivH6zYzZFR1N6_8N9witbfEET9DxYZVt5YF_Ov7s5EOpZRA/exec'
+  const form = document.forms['google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<!--Demo class popup ends-->
+
+  <img src="img/three-dots.png" class="dots">
+
+<!--Features section starts-->  
   <h1 class="features">Why should you choose EduSnap</h1>
   <div class="wrapper">
     <div class="row row-1">
@@ -103,7 +159,7 @@
     </div>
     <div class="row row-1">
       <section>
-        <img src="img/Exams-bro.svg" class="img-left">
+        <img src="img/Exams-bro.svg" class="img-last">
         <div class="details">
           <span class="title">Brain Storming</span>
         </div>
@@ -111,13 +167,17 @@
       </section>
     </div>
   </div>
-<!-- Features section ends here -->    
-    
+<!--Features section ends-->  
+
+
+
+
+
 <!-- footer section starts  -->
 
 <section class="footer">
 
-    <div class="credit"> Copyright &copy; 2022 EduSnap | created by <span>Aman Kumar</span> | all rights reserved </div>
+    <div class="credit"> Copyright &copy; 2020-2022 EduSnap | created by <span>Aman Kumar</span> | all rights reserved</div>
 
 </section>
 
@@ -125,6 +185,7 @@
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+<script src="js/popup.js"></script>
 
 </body>
 </html>
