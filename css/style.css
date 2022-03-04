@@ -480,9 +480,9 @@ form .signup-link a:hover{
 
 /*popup*/
 .popup{
-  background-color: #ffffff;
-  width: 450px;
-  padding: 30px 40px;
+  width:80rem;
+  background-color: white;
+  padding: 2.5rem;
   position: absolute;
   transform: translate(-50%,-50%);
   left: 50%;
@@ -494,7 +494,7 @@ form .signup-link a:hover{
 }
 .popup button{
   display: block;
-  margin:  0 0 20px auto;
+  margin:  0 0 0.5rem auto;
   background-color: transparent;
   font-size: 30px;
   color: #c5c5c5;
@@ -503,13 +503,12 @@ form .signup-link a:hover{
   cursor: pointer;
 }
 .popup p{
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin: 20px 0;
-  line-height: 25px;
 }
 .popup a{
   display: block;
-  width: 150px;
+  width: 15rem;
   position: relative;
   margin: 10px auto;
   text-align: center;
@@ -517,11 +516,11 @@ form .signup-link a:hover{
   color: #ffffff;
   text-decoration: none;
   padding: 5px 0;
-  font-size:1.5rem;
+  font-size:1.75rem;
 }
 
 .popup h2{
-  font-size:4rem;
+  font-size:5rem;
   color:darkcyan;
   font-family: Caveat;
 }
@@ -552,7 +551,6 @@ form .signup-link a:hover{
   }
 .popup {
   width:85%;
-  margin-top:4rem;
 }
 }
 @media(max-width: 440px){
@@ -586,8 +584,7 @@ form .signup-link a:hover{
     transform: translate(12.5%, -7.5%);
   }
   .popup {
-    width:85%;
-    margin-top:4rem;
+    width:90%;
   }
   
 }
