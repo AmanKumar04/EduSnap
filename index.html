@@ -17,10 +17,12 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/loading.css">
 
 </head>
 <body>
-    
+
+  
 <!--Popup starts here-->
 <div class="popup">
   <button id="close">&times;</button>
@@ -31,6 +33,22 @@
   <a href="https://wa.me/message/AKVNZTZSZPB5H1">Contact Us</a>
 </div>
 <!--Popup ends here-->
+
+<!--loading animation starts-->
+<div id="loader">
+<div class="bookshelf_wrapper">
+  <ul class="books_list">
+    <li class="book_item first"></li>
+    <li class="book_item second"></li>
+    <li class="book_item third"></li>
+    <li class="book_item fourth"></li>
+    <li class="book_item fifth"></li>
+    <li class="book_item sixth"></li>
+  </ul>
+  <div class="shelf"></div>
+</div>
+</div>
+<!--loading animation starts-->
 
 
 <!-- header section starts  -->
@@ -189,10 +207,17 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init(
-     { offset: 125,
-      duration: 1000 }
+     {
+       offset:120,
+       duration:1000
+     }
     );
   </script>
-
+<script>
+var loader = document.getElementById("loader")
+window.addEventListener("load",function(){
+    loader.style.display = "none";
+})
+</script>
 </body>
 </html>
