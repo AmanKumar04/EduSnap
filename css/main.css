@@ -34,7 +34,7 @@ html::-webkit-scrollbar-thumb{
 
 section {
   padding: 3rem 9%;
-  background-color: #f1f8fc;
+  background:linear-gradient(to right,#E9F8FF,#90b2d8,#c1e3ff);
 }
 
 .btn {
