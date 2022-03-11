@@ -4,7 +4,7 @@
 .section{
     width: 100%;
     min-height: 60rem;
-    background-color: #f1f8fc;
+    background:linear-gradient(to right,#E9F8FF,#90b2d8,#c1e3ff);
    }
    .container{
     width: 80%;
