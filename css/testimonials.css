@@ -3,50 +3,107 @@
 background-color: #f1f8fc;
   }
   
-  .review .box{
+  .review .box1{
     border-radius: .5rem;
     border:.1rem solid rgba(0,0,0,.3);
+    margin-bottom:2rem;
     padding:2rem;
     flex:1 1 30rem;
+    background:#f7bec0;
   }
   
-  .review .box .student{
+  .review .box1 .student{
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   
-  .review .box .student .student-info{
+  .review .box1 .student .student-info{
     display: flex;
     align-items: center;
   }
   
-  .review .box .student i{
+  .review .box1 .student i{
     font-size: 6rem;
-    color: darkcyan;
+    color: black;
     opacity: .5;
   }
   
-  .review .box .student .student-info img{
+  .review .box1 .student .student-info img{
     border-radius: 50%;
     object-fit: cover;
     height: 7rem;
     width:7rem;
     margin-right: 1.5rem;
+    padding: 2px;
+    border: 2px solid grey;
   }
   
-  .review .box .student .student-info h3{
+  .review .box1 .student .student-info h3{
     font-size: 2rem;
     color:#333;
 
   }
   
-  .review .box .student .student-info span{
+  .review .box1 .student .student-info span{
     font-size: 1.5rem;
-    color:var(--pink);
   }
   
-  .review .box .text{
+  .review .box1 .text{
+    padding:1rem 0;
+    font-size: 1.6rem;
+    color:#666;
+  }
+  
+  /* ------ Box 2 ------------ */
+  
+  .review .box2{
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.3);
+    margin-bottom:2rem;
+    padding:2rem;
+    flex:1 1 30rem;
+    background:#b3b1f2;
+  }
+  
+  .review .box2 .student{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .review .box2 .student .student-info{
+    display: flex;
+    align-items: center;
+  }
+  
+  .review .box2 .student i{
+    font-size: 6rem;
+    color: black;
+    opacity: .5;
+  }
+  
+  .review .box2 .student .student-info img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 7rem;
+    width:7rem;
+    margin-right: 1.5rem;
+    padding: 2px;
+    border: 2px solid grey;
+  }
+  
+  .review .box2 .student .student-info h3{
+    font-size: 2rem;
+    color:#333;
+
+  }
+  
+  .review .box2 .student .student-info span{
+    font-size: 1.5rem;
+  }
+  
+  .review .box2 .text{
     padding:1rem 0;
     font-size: 1.6rem;
     color:#666;
