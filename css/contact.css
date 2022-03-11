@@ -8,7 +8,7 @@
   display: flex;
   flex-wrap: wrap;
   gap:1.5rem;
-  background-color: #f1f8fc;
+background:linear-gradient(to right,#E9F8FF,#90b2d8,#c1e3ff);
 }
 
 .contact .image{
