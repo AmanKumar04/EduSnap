@@ -31,10 +31,11 @@ html::-webkit-scrollbar-thumb{
   background:#fff;
   border-radius: 5rem;
 }
-
+body{
+background:linear-gradient(to right,#E9F8FF,#90b2d8,#c1e3ff);
+}
 section {
   padding: 3rem 9%;
-background:linear-gradient(to right,#E9F8FF,#90b2d8,#c1e3ff);
 }
 
 .btn {
