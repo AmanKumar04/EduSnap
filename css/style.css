@@ -31,7 +31,6 @@ html::-webkit-scrollbar-thumb{
   background:#fff;
   border-radius: 5rem;
 }
-
 body{
   background:linear-gradient(to right,#E9F8FF,#90b2d8,#c1e3ff);
 }
@@ -96,26 +95,24 @@ section {
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+         
   padding: 0 5%;
   background: darkcyan;
 }
 
-img{
-    width: 6rem;
+.header .logo img{
+  margin-top: 0.8rem;
+  width: 6rem;
+  margin-right:1rem;
 }
 
 
-
-.header .logo {
+.header .logo-text {
   font-size: 2.5rem;
   font-weight: bolder;
   color: #fff;
   margin-top: 0.8rem;
-}
-
-.header .logo i {
-  color: #fa1d86;
+  margin-right:35%;
 }
 
 .header .navbar ul {
@@ -125,6 +122,7 @@ img{
 .header .navbar ul li {
   position: relative;
   float: left;
+  
 }
 
 .header .navbar ul li:hover ul {
@@ -139,7 +137,7 @@ img{
 }
 
 .header .navbar ul li a:hover {
- background: #cca7c2;
+  background: #cca7c2;
   color:black;
   border-radius:25%;
 }
@@ -237,6 +235,7 @@ img{
 @media (max-width: 768px) {
   #menu {
     display: inline-block;
+    margin: 0 0 0 auto;
   }
   .header .navbar {
     position: absolute;
@@ -276,9 +275,6 @@ img{
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-}
-body{
-  background: #f1f8fc;
 }
 
 .wrapper{
@@ -359,7 +355,6 @@ float: left;
 }
 
 /*demo*/
-
 
 .show-btn{
   margin-left:45%;
@@ -535,14 +530,14 @@ form .btn button{
     transform: translate(12.5%, -7.5%);
   }
 .popup {
-  width:90%;
+  width:85%;
 }
-  .popup h2{
-    font-size: 4rem;;
-  }
-  .popup p{
-    font-size: 1.75rem;
-  }
+.popup h2{
+  font-size: 4rem;;
+}
+.popup p{
+  font-size: 1.75rem;
+}
 }
 @media(max-width: 440px){
 
