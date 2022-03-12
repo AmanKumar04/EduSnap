@@ -100,20 +100,18 @@ section {
   background: darkcyan;
 }
 
-.header .logo img{
-  margin-top: 0.8rem;
-  width: 6rem;
-  margin-right:1rem;
+img{
+    width: 6rem;
 }
 
 
-.header .logo-text {
+.header .logo {
   font-size: 2.5rem;
   font-weight: bolder;
   color: #fff;
   margin-top: 0.8rem;
-  margin-right:35%;
 }
+
 
 .header .navbar ul {
   list-style: none;
