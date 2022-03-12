@@ -1,7 +1,10 @@
 .section{
     width: 100%;
     min-height: 60rem;
-background:linear-gradient(to right,#E9F8FF,#90b2d8,#c1e3ff);
+background: #CCFFFF;
+background: -webkit-linear-gradient(top left, #CCFFFF, #BBC6F9);
+background: -moz-linear-gradient(top left, #CCFFFF, #BBC6F9);
+background: linear-gradient(to bottom right, #CCFFFF, #BBC6F9);
    }
    .container{
     width: 80%;
