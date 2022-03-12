@@ -28,6 +28,7 @@ background: linear-gradient(to bottom right, #CCFFFF, #BBC6F9);
   border:.1rem solid rgba(0,0,0,.1);
   border-radius: .5rem;
   padding:2rem;
+  background-color: whitesmoke;
 }
 
 .contact form .inputBox{
