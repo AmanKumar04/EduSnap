@@ -8,6 +8,7 @@
 background: -webkit-linear-gradient(top left, #CCFFFF, #BBC6F9);
 background: -moz-linear-gradient(top left, #CCFFFF, #BBC6F9);
 background: linear-gradient(to bottom right, #CCFFFF, #BBC6F9);
+}
    .container{
     width: 80%;
     display: block;
