@@ -14,6 +14,22 @@ background: -moz-linear-gradient(top left, #CCFFFF, #BBC6F9);
 background: linear-gradient(to bottom right, #CCFFFF, #BBC6F9);
 }
 
+.contact h1{
+  width: 100%;
+  color:darkcyan;
+  font-size:4rem;
+  text-align:center;
+  text-decoration: underline solid darkcyan 5px;
+  margin-bottom:1rem;
+}
+.contact p{
+  width: 100%;
+  font-size:2.5rem;
+  text-align:center;
+  margin-bottom:2rem;
+  font-family:caveat;
+}
+
 .contact .image{
   flex:1 1 35rem;
 }
