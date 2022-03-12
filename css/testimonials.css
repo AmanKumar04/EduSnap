@@ -1,6 +1,9 @@
 .review{
     display: block;
-background-color: #f1f8fc;
+background: #CCFFFF;
+background: -webkit-linear-gradient(top left, #CCFFFF, #BBC6F9);
+background: -moz-linear-gradient(top left, #CCFFFF, #BBC6F9);
+background: linear-gradient(to bottom right, #CCFFFF, #BBC6F9);
   }
   
   .review .box1{
